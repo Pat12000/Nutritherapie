@@ -1,0 +1,155 @@
+:root{
+    --Olive: #9BAE8E;
+    --White: white;
+    --light-grey: #F5F5F5;
+
+    --Title-font: "Lora" , serif;
+    --body-font: 'Open Sans' , sans-serif;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
+}
+body{
+    font-weight: 300;
+    font-family: var(--body-font);
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+main section{
+    display: flex;
+    width: 100%;
+    background-color: var(--White);
+    padding-inline-start: rem;
+    justify-content: center;
+}
+
+
+.container2{
+    display: flex;
+    /* flex-direction: column; */
+    /* qd je  met flex direction les cta sont decentré */
+    /* qd je met pas flex directionle titre h2 */
+    width: 100%;
+    max-width: 1250px;
+    padding: 3rem;
+    background-color: var(--light-grey);
+    justify-content: center;
+    
+    
+}
+.container3{
+    max-width: 500px;
+    padding: 3rem;
+    
+    background-color: white;
+   
+}
+main section:not(:first-of-type, .pourquoi ,:last-of-type){
+    background-color: var(--light-grey);
+} 
+/*
+main section .container .container2:not(:first-of-type, .porquoi , :last-of-type){
+    background-color: white;
+    
+}
+.container2 :not(:first-of-type,.pourquoi,:last-of-type){
+    background-color: aqua;
+    
+}
+.container3:not(:first-of-type, .pourquoi, :last-of-type) {
+    background-color: var(--light-grey);
+} */
+
+/* pkoi ca ne change rien ds le container2 et 3?
+je remplace container2 et container 3 des section sophie et avis par container 4 et 5 */
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    padding: 3rem;
+    
+    justify-content: center;
+    background-color: var(--White);
+    
+}
+.container5{
+    max-width: 1250px;
+        padding-left: 3rem;
+        padding-top: 3rem;
+        background-color: var(--light-grey);
+}
+
+h1 h2{
+    font-size: 48px;
+    /* ca ne marche pas le font family a l'ecran est le body-font */
+    font-family: var(--Title-font);
+}
+.cta {
+    background-color: var(--Olive);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-family: var(--title-font);
+    border: 1px solid var(--dark-gray);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+header div{
+    background-color: var(--Olive);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+    
+    
+    
+}
+.logo{
+    max-width: 450px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-left: 3rem;
+}
+header div div{
+    min-width: 671px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+nav{
+    display: flex;
+    padding-right: 1rem;
+}
+.menu{
+    display: flex;
+    margin: 0 auto;
+    
+    min-width: 200px;
+    align-content: center;
+}
+/* main */
+
+
+
